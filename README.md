@@ -60,4 +60,6 @@ src/
 
 ## Despliegue
 
-Pendiente: Azure Static Web Apps (Free). Hay que definir `VITE_API_URL` con la URL pública de la API antes de `npm run build`, y añadir la URL del frontend a `Cors__AllowedOrigins__0` en la API. Pasos completos en el README global.
+Publicado en Azure Static Web Apps (Free): https://red-plant-07021450f.6.azurestaticapps.net/
+
+Se compila con `VITE_API_URL` apuntando a la API de Azure (`npm run build`) y se sube `dist/`. La API acepta ese origen por CORS en `Cors__AllowedOrigins__0`.
